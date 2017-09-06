@@ -1,0 +1,1 @@
+clones/ew302/clone_info.mk

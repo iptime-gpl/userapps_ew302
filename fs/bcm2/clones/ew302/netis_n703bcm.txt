@@ -1,0 +1,65 @@
+2c2
+< boardnum=360
+---
+> boardnum=1
+7c7
+< et0macaddr=00:90:4c:08:01:68
+---
+> et0macaddr=08-10-76-69-73-c4
+11c11
+< vlan1ports=1 2 3 4 5*
+---
+> vlan1ports=0 1 2 3 5*
+13c13
+< vlan2ports=0 5
+---
+> vlan2ports=4 5
+16c16
+< lan_ipaddr=192.168.0.1
+---
+> lan_ipaddr=192.168.1.1
+21c21
+< watchdog=0
+---
+> watchdog=3
+27c27
+< sb/1/macaddr=00:90:4c:09:01:68
+---
+> sb/1/macaddr=08-10-76-69-73-c4
+36,37c36,37
+< sb/1/ledbh5=11
+< sb/1/ledbh6=2
+---
+> sb/1/ledbh5=2
+> sb/1/ledbh6=11
+75,77c75,77
+< sb/1/pa2gw0a0=0xfeee
+> sb/1/pa2gw0a0=0xfed3
+
+< sb/1/pa2gw1a0=0x151b
+> sb/1/pa2gw1a0=0x153c
+
+< sb/1/pa2gw2a0=0xfb64
+> sb/1/pa2gw2a0=0xfb2c
+
+< sb/1/pa2gw0a1=0xfea5
+> sb/1/pa2gw0a1=0xfed7
+
+< sb/1/pa2gw1a1=0x152d
+> sb/1/pa2gw1a1=0x15cb
+
+< sb/1/pa2gw2a1=0xfb07
+> sb/1/pa2gw2a1=0xfb13
+---
+89,95c89,91
+< product_name=n704bcm
+< tftp_server=192.168.0.100
+< diag=1
+< ateflag=0
+< restore_defaults=0
+< run_gpio=5
+< no_downgrade=7.62
+---
+> wan_macaddr=08-10-76-69-73-c5
+> wl0_hwaddr=08-10-76-69-73-c4
+> wl0.1_hwaddr=08-10-76-69-73-c6
